@@ -1,0 +1,26 @@
+//LAYOUT
+.container {
+  @extend %clearfix;
+  @include grid-unit(12);
+  @include block-center;
+}
+
+#header {
+  background: #eee;
+  h1 {
+    a {
+      color: $textColor;
+    }
+  }
+}
+
+#content {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+#footer {
+  border-top: 1px solid #eee;
+  text-align: right;
+}

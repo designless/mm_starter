@@ -1,0 +1,107 @@
+// EXTEND
+%clearfix {
+ &:before, &:after {
+  display: table;
+  content: "";
+}
+&:after {
+  clear: both;
+}
+& {
+  zoom: 1;
+}
+}
+
+%hidden-text {
+ text-indent: 100%;
+ overflow: hidden;
+ white-space: nowrap;
+ a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+}
+
+// BUTTON
+@mixin btn-format-1($color) {
+  border-radius: 5px;
+  font-size: 20px;
+  display: block;
+  width: 420px;
+  margin: 0 auto 30px;
+  background: $color;
+  text-align: center;
+  color: #fff;
+  height: 70px;
+  line-height: 70px;
+  position: relative;
+  box-shadow: 0px 5px 0px 0px darken($color, 20%);
+  transition: all 0.1s ease-out;
+  top: 0px;
+  &:hover {
+    color: #fff !important;
+    top: 5px;
+    box-shadow: 0px 0px 0px 0px darken($color, 20%);
+  }
+}
+
+// GRID
+$column-width: 60px;
+$gutter-width: 20px;
+@mixin grid-unit($span) {
+  float: left;
+  margin-right: $gutter-width;
+  width: $column-width * $span + $gutter-width * ($span - 1);
+}
+
+// CENTER
+@mixin block-center {
+  margin: 0 auto;
+  float: none;
+  position: relative;
+}
+
+// LINK
+@mixin link-color-lighten($color) {
+  text-decoration: none;
+  -webkit-transition: all .25s ease-out;
+     -moz-transition: all .25s ease-out;
+      -ms-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+  &:link, &:visited {
+    color: $color;
+  }
+  &:hover, &:active, &:focus {
+    color: lighten($color, 10%);
+  }
+}
+
+@mixin link-color-darken($color) {
+  text-decoration: none;
+  -webkit-transition: all .25s ease-out;
+     -moz-transition: all .25s ease-out;
+      -ms-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+  &:link, &:visited {
+    color: $color;
+  }
+  &:hover, &:active, &:focus {
+    color: darken($color, 10%);
+  }
+}
+
+// Font Awesome
+@mixin fa{
+  &:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    font-weight: normal;
+    font-style: normal;
+    margin-right: 0.7em;
+    text-decoration: none;
+  }
+}
+
