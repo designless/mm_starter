@@ -11,7 +11,7 @@ compass_config do |config|
   config.sass_dir = "assets/css"
   config.images_dir = "assets/images"
   config.javascripts_dir = "assets/js"
-  fonts_dir = "fonts"
+  fonts_dir = "assets/fonts"
 
   # You can select your preferred output style here (can be overridden via the command line):
   # output_style = :expanded or :nested or :compact or :compressed
@@ -71,7 +71,7 @@ helpers do
   # breadcrumbs
   def breadcrumbs(resource)
     list = []
-    list << content_tag(:li, resource.data.title, class: 'active fa fa-angle-right')
+    list << content_tag(:li, resource.data.title, class: 'active fa fa-home')
     unless resource.parent.nil?
       current = resource.parent
       until current.nil?

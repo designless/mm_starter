@@ -1,9 +1,6 @@
 //LAYOUT
 .index {
-  -webkit-background-size: cover;
-  background-size: cover;
   h1 {
-   @include fa;
-   content: "ff";
+    font-family: $shelby;
   }
 }
