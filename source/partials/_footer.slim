@@ -1,6 +1,9 @@
 footer#footer
   .container
+    ul.breadcrumbs
+      = breadcrumbs(current_page)
+
     p.copyright
-    small &copy; 2014 WEBSITE
+      small &copy; 2014 WEBSITE
 
 = javascript_include_tag 'scripts'
