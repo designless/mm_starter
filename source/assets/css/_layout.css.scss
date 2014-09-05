@@ -5,6 +5,57 @@
   @include block-center;
 }
 
+.container2 {
+  width: 720px;
+  margin: 0 auto;
+  padding: $space;
+  background: #fff;
+}
+
+.grid-1 {
+  @include grid-unit(1);
+}
+
+.grid-2 {
+  @include grid-unit(2);
+}
+
+.grid-3 {
+  @include grid-unit(3);
+}
+
+.grid-4 {
+  @include grid-unit(4);
+}
+
+.grid-5 {
+  @include grid-unit(5);
+}
+
+.grid-6 {
+  @include grid-unit(6);
+}
+
+.grid-7 {
+  @include grid-unit(7);
+}
+
+.grid-8 {
+  @include grid-unit(8);
+}
+
+.grid-9 {
+  @include grid-unit(9);
+}
+
+.grid-10 {
+  @include grid-unit(10);
+}
+
+.grid-last {
+  margin-right: 0 !important;
+}
+
 #header {
   background: #eee;
   h1 {
