@@ -1,6 +1,6 @@
 body {
   height: 100%;
-  font-family: $body-font-family;
+  font-family: $baseFont;
   -webkit-text-size-adjust: 100%;
   position: relative;
 }
@@ -38,6 +38,10 @@ p {
   color: $purple !important;
 }
 
+.text-gray {
+  color: $gray !important;
+}
+
 .text-right {
   text-align: right !important;
 }
@@ -48,6 +52,38 @@ p {
 
 .text-small {
   font-size: 0.8rem;
+}
+
+.text-small2 {
+  font-size: 0.6rem;
+}
+
+.text-lead {
+  font-size: 1.2rem;
+}
+
+.bg-red {
+  background-color: $red !important;
+}
+
+.bg-blue {
+  background-color: $blue !important;
+}
+
+.bg-green {
+  background-color: $green !important;
+}
+
+.bg-yellow {
+  background-color: $yellow !important;
+}
+
+.bg-orange {
+  background-color: $orange !important;
+}
+
+.bg-purple {
+  background-color: $purple !important;
 }
 
 .mb0 {
