@@ -1,5 +1,5 @@
 //= require "ga"
-//= require "jquery-1.8.3.min"
+//= require "jquery-1.11.1.min"
 //= require "jquery.easing-1.3.pack"
 //= require "jquery.biggerlink.min"
 
