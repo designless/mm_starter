@@ -9,9 +9,20 @@ meta content="" property="og:site_name"
 meta content="" property="og:description"
 meta content="" name="description"
 meta content="" name="author"
-= stylesheet_link_tag "style"
-= favicon_tag 'assets/images/favicon.png'
-link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon"
-link href="assets/images/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"
-link href="assets/images/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"
-link href="assets/images/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"
+
+meta name="twitter:card" value="summary"
+meta name="twitter:site" value="@"
+meta name="twitter:creator" value="@"
+meta name="twitter:url" value="http://"
+meta name="twitter:title" value=""
+meta name="twitter:description" value=""
+meta name="twitter:image" value="ogp.jpg"
+
+= stylesheet_link_tag "app"
+= favicon_tag 'favicon.ico'
+link href="#{asset_path(:images, 'apple-touch-icon.png')}" rel="apple-touch-icon"
+link href="#{asset_path(:images, 'apple-touch-icon-76x76.png')}" rel="apple-touch-icon" sizes="76x76"
+link href="#{asset_path(:images, 'apple-touch-icon-120x120.png')}" rel="apple-touch-icon" sizes="120x120"
+link href="#{asset_path(:images, 'apple-touch-icon-152x152.png')}" rel="apple-touch-icon" sizes="152x152"
+/![if lt IE 9]
+  <script src="/javascripts/html5shiv.js"></script>
